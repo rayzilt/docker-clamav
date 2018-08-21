@@ -23,6 +23,11 @@ RUN set -x \
 EXPOSE 3310
 
 COPY startup.sh /
+COPY healthcheck.sh /
+
+# Healtcheck if Rspamd is returning stats
+HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
+	CMD /healthcheck.sh || exit 1
 
 ENTRYPOINT ["/startup.sh"]
 
