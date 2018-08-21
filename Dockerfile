@@ -25,7 +25,7 @@ EXPOSE 3310
 COPY startup.sh /
 COPY healthcheck.sh /
 
-# Healtcheck if Rspamd is returning stats
+# Healtcheck if Clamd and Freshclam are in a returning state
 HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 	CMD /healthcheck.sh || exit 1
 
