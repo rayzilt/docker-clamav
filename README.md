@@ -32,7 +32,7 @@ Every hour freshclam checks for new definitions.
 ### Links ###
 * Clamav Official website: https://clamav.net/
 * Documentation: http://www.clamav.net/documents/
-* Rspamd Github: https://github.com/Cisco-Talos/clamav-devel
+* Clamav Github: https://github.com/Cisco-Talos/clamav-devel
 
 ### Support ###
 This Docker image is for personal use but let me know if there are any improvements available.
