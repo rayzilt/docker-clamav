@@ -1,4 +1,4 @@
-# rayzilt/rspamd #
+# rayzilt/clamav #
 
 Non-Official Dockerized [Clamav](http://www.clamav.net/) based on Debian Stretch Slim.
 
