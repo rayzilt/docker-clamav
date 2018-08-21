@@ -4,7 +4,7 @@ LABEL maintainer="Rayzilt - <docker@rayzilt.nl>"
 # Set apt non-interactive
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install Clamav from Backports, Enable Foreground and enable tcp socket on port 3310
+# Install Clamav from Backports, enable Foreground and enable tcp socket on port 3310
 RUN set -x \
 	&& apt-get update \
 	&& apt-get --no-install-recommends install -y lsb-release procps \
@@ -25,3 +25,12 @@ EXPOSE 3310
 COPY startup.sh /
 
 ENTRYPOINT ["/startup.sh"]
+
+# Setup Labels
+LABEL org.label-schema.name="Clamav" \
+	org.label-schema.description="Clamav & Freshclam" \
+	org.label-schema.usage="https://hub.docker.com/r/rayzilt/clamav/" \
+	org.label-schema.url="http://www.clamav.net/" \
+	org.label-schema.vcs-url="https://github.com/Rayzilt/Docker-Clamav" \
+	org.label-schema.vendor="Rayzilt" \
+	org.label-schema.schema-version="1.0" \
