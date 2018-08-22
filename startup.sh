@@ -4,7 +4,7 @@ echo "Running freshclam to get latest definitions..."
 freshclam --user=clamav --stdout
 status=$?
 
-if [ ${status} -ne 0 ]; then
+if if ([ ${status} -ne 0 ] && [ ${status} -ne 1 ]); then
 	echo "Couldn't download definitions... stopping."
 	exit ${status}
 fi
