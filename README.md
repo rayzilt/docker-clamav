@@ -29,7 +29,7 @@ Both programs print there output to console.
 
 Every hour freshclam checks for new definitions.
  
-### Links ###
+### References ###
 * Clamav Official website: https://clamav.net/
 * Documentation: http://www.clamav.net/documents/
 * Clamav Github: https://github.com/Cisco-Talos/clamav-devel
