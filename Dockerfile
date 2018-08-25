@@ -32,10 +32,19 @@ HEALTHCHECK --interval=1m --timeout=5s --start-period=10s \
 ENTRYPOINT ["/startup.sh"]
 
 # Setup Labels
+ARG VERSION
+ARG COMMIT
+ARG URL
+ARG BRANCH
+ARG DATE
+
 LABEL org.label-schema.name="Clamav" \
 	org.label-schema.description="Clamav & Freshclam" \
+	org.label-schema.version=$VERSION \
 	org.label-schema.usage="https://hub.docker.com/r/rayzilt/clamav/" \
 	org.label-schema.url="http://www.clamav.net/" \
-	org.label-schema.vcs-url="https://github.com/Rayzilt/Docker-Clamav" \
+	org.label-schema.vcs-url=$URL \
+	org.label-schema.vcs-ref=$COMMIT \
 	org.label-schema.vendor="Rayzilt" \
+	org.label-schema.build-date=$DATE \
 	org.label-schema.schema-version="1.0" \
