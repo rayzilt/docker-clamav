@@ -1,0 +1,9 @@
+#!/bin/bash
+
+VERSION=$(git ls-remote --tags -q https://github.com/Cisco-Talos/clamav-devel | sed -n "s/^[[:xdigit:]]\{40\}[[:blank:]]refs\/tags\/clamav-\([0-9]\{1\}\.[0-9]\{3\}\.[0-9]\{1\}\)$/\1/p" | sort --version-sort | tail -1)
+
+docker tag \
+	"${IMAGE_NAME}" \
+	"${DOCKER_REPO}:${VERSION}"
+docker push \
+	"${DOCKER_REPO}:${VERSION}"
