@@ -3,9 +3,9 @@
 Non-Official Dockerized [Clamav](http://www.clamav.net/) based on Debian Stretch Slim.
 
 ### Tags ###
-Branch  | Version  | Tag Name     | Dockerfile
-------- | -------- | ------------ | ---------
-Stable | [![](https://images.microbadger.com/badges/version/rayzilt/clamav.svg)](https://microbadger.com/images/rayzilt/clamav "Get your own version badge on microbadger.com")  | latest       | [Dockerfile](https://github.com/Rayzilt/Docker-Clamav/blob/master/Dockerfile)
+Branch  | Version  | Tag Name     | Dockerfile | Image Info
+------- | -------- | ------------ | ---------  | -----------
+Stable | [![](https://images.microbadger.com/badges/version/rayzilt/clamav.svg)](https://microbadger.com/images/rayzilt/clamav "Get your own version badge on microbadger.com")  | latest       | [Dockerfile](https://github.com/Rayzilt/Docker-Clamav/blob/master/Dockerfile)  |  [![](https://images.microbadger.com/badges/image/rayzilt/clamav.svg)](https://microbadger.com/images/rayzilt/clamav "Get your own image badge on microbadger.com")
 
 ### Environment Variables ###
 No environment variables are used.
