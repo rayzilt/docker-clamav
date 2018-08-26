@@ -5,7 +5,7 @@ freshclam --user=clamav --stdout
 status=$?
 
 if ([ ${status} -ne 0 ] && [ ${status} -ne 1 ]); then
-	if [ ! -f /var/lib/clamav ]; then
+	if [ ! -f /var/lib/clamav/daily.cld ]; then
 		echo "Couldn't download definitions... stopping."
 		exit ${status}
 	else 
