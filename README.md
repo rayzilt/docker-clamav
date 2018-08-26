@@ -11,7 +11,12 @@ Stable | [![](https://images.microbadger.com/badges/version/rayzilt/clamav.svg)]
 No environment variables are used.
 
 ### Volumes ###
-No volumes are defined.
+Volume                  | Function                      | Persistent
+----------------------- | ----------------------------- | --------
+/etc/clamav             | Clamav configuration          | No
+/var/lib/clamav         | Clamav definitions            | No
+
+Keep in mind when making `/etc/clamav` persistent, you need to download the configuration from [Debian Repository](https://packages.debian.org/stretch-updates/clamav).
 
 ### Exposed Ports ###
 Port | Function
