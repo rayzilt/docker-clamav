@@ -34,7 +34,6 @@ ENTRYPOINT ["/startup.sh"]
 # Setup Labels
 ARG VERSION
 ARG COMMIT
-ARG URL
 ARG BRANCH
 ARG DATE
 
@@ -43,7 +42,7 @@ LABEL org.label-schema.name="Clamav" \
 	org.label-schema.version=$VERSION \
 	org.label-schema.usage="https://hub.docker.com/r/rayzilt/clamav/" \
 	org.label-schema.url="http://www.clamav.net/" \
-	org.label-schema.vcs-url=$URL \
+	org.label-schema.vcs-url="https://github.com/Cisco-Talos/clamav-devel/" \
 	org.label-schema.vcs-ref=$COMMIT \
 	org.label-schema.vendor="Rayzilt" \
 	org.label-schema.build-date=$DATE \
