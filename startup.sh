@@ -5,8 +5,13 @@ freshclam --user=clamav --stdout
 status=$?
 
 if ([ ${status} -ne 0 ] && [ ${status} -ne 1 ]); then
-	echo "Couldn't download definitions... stopping."
-	exit ${status}
+	if [ ! -f /var/lib/clamav ]; then
+		echo "Couldn't download definitions... stopping."
+		exit ${status}
+	else 
+		echo "Couldn't downoad definitions..."
+		echo "Continue booting because older definitions are found."
+	fi
 fi
 
 echo "Starting freshclam as daemon..."
