@@ -7,10 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install Clamav, enable Foreground and enable tcp socket on port 3310
 RUN set -x \
 	&& apt update \
-	&& apt --no-install-recommends install -y lsb-release \
-	&& DEBIAN_CODE_NAME=`lsb_release -c -s` \
 	&& apt-get --no-install-recommends install -y clamav-daemon \
-	&& apt-get purge -y lsb-release \
 	&& apt-get autoremove --purge -y \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* \
