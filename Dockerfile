@@ -7,9 +7,9 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install Clamav, enable Foreground and enable tcp socket on port 3310
 RUN set -x \
 	&& apt update \
-	&& apt-get --no-install-recommends install -y clamav-daemon \
-	&& apt-get autoremove --purge -y \
-	&& apt-get clean \
+	&& apt --no-install-recommends install -y clamav-daemon \
+	&& apt autoremove --purge -y \
+	&& apt clean \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& sed -i 's/^Foreground false$/Foreground true/' /etc/clamav/clamd.conf \
 	&& sed -i 's/^Foreground false$/Foreground true/' /etc/clamav/freshclam.conf \
