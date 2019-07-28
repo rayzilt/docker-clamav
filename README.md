@@ -1,6 +1,6 @@
 # rayzilt/clamav #
 
-Non-Official Dockerized [Clamav](http://www.clamav.net/) based on Debian Stretch Slim.
+Non-Official Dockerized [Clamav](http://www.clamav.net/) based on Debian Buster Slim.
 
 ### Tags ###
 Branch  | Version  | Tag Name     | Dockerfile | Image Info
@@ -33,7 +33,7 @@ After a successfull download, freshclam and clamd are started as daemon.
 Both programs print there output to console.
 
 Every hour freshclam checks for new definitions.
- 
+
 ### References ###
 * Clamav Official website: https://clamav.net/
 * Documentation: http://www.clamav.net/documents/
