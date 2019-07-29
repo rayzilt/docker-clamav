@@ -2,6 +2,10 @@
 
 Non-Official Dockerized [Clamav](http://www.clamav.net/) based on Debian Buster Slim.
 
+[![Build Automated](https://img.shields.io/docker/automated/rayzilt/clamav.svg)](https://hub.docker.com/r/rayzilt/clamav)
+[![Build Status](https://img.shields.io/docker/cloud/build/rayzilt/clamav.svg)](https://hub.docker.com/r/rayzilt/clamav)
+[![Docker Pulls](https://img.shields.io/docker/pulls/rayzilt/clamav.svg)](https://hub.docker.com/r/rayzilt/clamav)
+
 ### Tags ###
 Branch  | Version  | Tag Name     | Dockerfile | Image Info
 ------- | -------- | ------------ | ---------  | -----------
