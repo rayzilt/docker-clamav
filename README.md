@@ -20,7 +20,7 @@ Volume                  | Function                      | Persistent
 /etc/clamav             | Clamav configuration          | No
 /var/lib/clamav         | Clamav definitions            | No
 
-Keep in mind when making `/etc/clamav` persistent, you need to download the configuration from [Debian Repository](https://packages.debian.org/stretch-updates/clamav).
+Keep in mind when making `/etc/clamav` persistent, you need to download the configuration from [Debian Repository](https://packages.debian.org/buster-updates/clamav).
 
 ### Exposed Ports ###
 Port | Function
